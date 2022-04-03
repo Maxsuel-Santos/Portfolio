@@ -63,6 +63,7 @@ header .logo {
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: .6s;
+    display: none;
 }
 
 header #toggle {
@@ -302,7 +303,11 @@ header #toggle::after {
         margin-right: 10px;
     }
 
-    #photo {
+    header .logo {
+        display: block;
+    }
+
+    /*#photo {
         display: block;
         position: relative;
         top: 190px;
@@ -310,8 +315,7 @@ header #toggle::after {
     }
 
     #photo img {
-        display: block;
         width: 100px;
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    }
+    }*/
 }
