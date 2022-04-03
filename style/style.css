@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    z-index: 10000;
+    transition: .6s;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .6s;
+}
+
+header #toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Linha do menu de cima */
+header #toggle::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+/* Linha do menu de baixo */
+header #toggle::after {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.banner.active header #toggle::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.banner.active header #toggle::after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background: url(../assets/img/bg.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+    z-index: 2;
+}
+
+.banner.active {
+    transform: translateX(-400px);
+}
+
+#navigation {
+    position: fixed;
+    top: 0;
+    right: -200;
+    width: 400px;
+    height: 100vh;
+    background: #40c3ff;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    transition: .5s;
+}
+
+#navigation.active {
+    right: 0;
+}
+
+#navgation ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#navgation ul li {
+    list-style: none;
+
+}
+
+#navgation ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
