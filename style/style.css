@@ -111,7 +111,6 @@ header #toggle::after {
 
 #navigation ul li {
     list-style: none;
-
 }
 
 #navigation ul li a {
@@ -186,3 +185,4 @@ header #toggle::after {
     filter: invert(1);
     mix-blend-mode: difference;
 }
+
