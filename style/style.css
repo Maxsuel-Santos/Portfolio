@@ -199,8 +199,6 @@ header #toggle::after {
     overflow: hidden;
 }
 
-/**/
-
 .content a::before {
     content: "";
     position: absolute;
@@ -225,8 +223,6 @@ header #toggle::after {
 .content a:hover::before {
     width: 100%;
 }
-
-/**/
 
 .sci {
     position: absolute;
