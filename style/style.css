@@ -63,7 +63,7 @@ header .logo {
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: .6s;
-    display: none;
+    visibility: hidden;
 }
 
 header #toggle {
