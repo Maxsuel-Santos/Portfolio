@@ -256,6 +256,10 @@ header #toggle::after {
     mix-blend-mode: difference;
 }
 
+#photo {
+    display: none;
+}
+
 @media only screen and (max-width: 767px) {
     header {
         padding: 20px 50px;
@@ -296,5 +300,18 @@ header #toggle::after {
     .sci li a {
         margin: initial;
         margin-right: 10px;
+    }
+
+    #photo {
+        display: block;
+        position: relative;
+        top: 190px;
+        left: 10px;
+    }
+
+    #photo img {
+        display: block;
+        width: 100px;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     }
 }
