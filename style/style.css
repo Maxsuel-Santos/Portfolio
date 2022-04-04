@@ -305,6 +305,7 @@ header #toggle::after {
 
     header .logo {
         display: block;
+	visibility: visible; 
     }
 
     /*#photo {
