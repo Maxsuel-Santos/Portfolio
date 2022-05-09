@@ -221,7 +221,7 @@ header #toggle::after {
 
 .content a:hover {
     color: #ffffff;
-    border: 1px solid #fff;
+    outline: 1px solid #fff;
     transition: .6s ease-in-out;
 }
 
