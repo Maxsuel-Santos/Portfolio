@@ -259,6 +259,7 @@ header #toggle::after {
     max-width: 20px;
     filter: invert(1);
     mix-blend-mode: difference;
+    transform: scale(120%);
 }
 
 #photo {
